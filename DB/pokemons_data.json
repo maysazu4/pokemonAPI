@@ -2,7 +2,10 @@
     {
         "id": 1,
         "name": "bulbasaur",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 7,
         "weight": 69,
         "ownedBy": [
@@ -43,7 +46,10 @@
     {
         "id": 2,
         "name": "ivysaur",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 10,
         "weight": 130,
         "ownedBy": [
@@ -76,7 +82,10 @@
     {
         "id": 3,
         "name": "venusaur",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 20,
         "weight": 1000,
         "ownedBy": [
@@ -137,7 +146,9 @@
     {
         "id": 4,
         "name": "charmander",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 6,
         "weight": 85,
         "ownedBy": [
@@ -158,7 +169,9 @@
     {
         "id": 5,
         "name": "charmeleon",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 11,
         "weight": 190,
         "ownedBy": [
@@ -199,7 +212,10 @@
     {
         "id": 6,
         "name": "charizard",
-        "type": "fire",
+        "type": [
+            "fire",
+            "flying"
+        ],
         "height": 17,
         "weight": 905,
         "ownedBy": [
@@ -232,7 +248,9 @@
     {
         "id": 7,
         "name": "squirtle",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 5,
         "weight": 90,
         "ownedBy": [
@@ -281,7 +299,9 @@
     {
         "id": 8,
         "name": "wartortle",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 10,
         "weight": 225,
         "ownedBy": [
@@ -326,7 +346,9 @@
     {
         "id": 9,
         "name": "blastoise",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 16,
         "weight": 855,
         "ownedBy": [
@@ -355,7 +377,9 @@
     {
         "id": 10,
         "name": "caterpie",
-        "type": "bug",
+        "type": [
+            "bug"
+        ],
         "height": 3,
         "weight": 29,
         "ownedBy": [
@@ -384,7 +408,9 @@
     {
         "id": 11,
         "name": "metapod",
-        "type": "bug",
+        "type": [
+            "bug"
+        ],
         "height": 7,
         "weight": 99,
         "ownedBy": [
@@ -413,7 +439,10 @@
     {
         "id": 12,
         "name": "butterfree",
-        "type": "bug",
+        "type": [
+            "bug",
+            "flying"
+        ],
         "height": 11,
         "weight": 320,
         "ownedBy": []
@@ -421,7 +450,10 @@
     {
         "id": 13,
         "name": "weedle",
-        "type": "bug",
+        "type": [
+            "bug",
+            "poison"
+        ],
         "height": 3,
         "weight": 32,
         "ownedBy": [
@@ -446,7 +478,10 @@
     {
         "id": 14,
         "name": "kakuna",
-        "type": ["bug", "poison"],
+        "type": [
+            "bug",
+            "poison"
+        ],
         "height": 6,
         "weight": 100,
         "ownedBy": [
@@ -459,7 +494,10 @@
     {
         "id": 15,
         "name": "beedrill",
-        "type": "bug",
+        "type": [
+            "bug",
+            "poison"
+        ],
         "height": 10,
         "weight": 295,
         "ownedBy": [
@@ -496,7 +534,10 @@
     {
         "id": 16,
         "name": "pidgey",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 3,
         "weight": 18,
         "ownedBy": [
@@ -529,7 +570,10 @@
     {
         "id": 17,
         "name": "pidgeotto",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 11,
         "weight": 300,
         "ownedBy": [
@@ -570,7 +614,10 @@
     {
         "id": 18,
         "name": "pidgeot",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 15,
         "weight": 395,
         "ownedBy": [
@@ -603,7 +650,9 @@
     {
         "id": 19,
         "name": "rattata",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 3,
         "weight": 35,
         "ownedBy": [
@@ -620,7 +669,9 @@
     {
         "id": 20,
         "name": "raticate",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 7,
         "weight": 185,
         "ownedBy": [
@@ -681,7 +732,10 @@
     {
         "id": 21,
         "name": "spearow",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 3,
         "weight": 20,
         "ownedBy": [
@@ -710,7 +764,10 @@
     {
         "id": 22,
         "name": "fearow",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 12,
         "weight": 380,
         "ownedBy": [
@@ -743,7 +800,9 @@
     {
         "id": 23,
         "name": "ekans",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 20,
         "weight": 69,
         "ownedBy": [
@@ -768,7 +827,9 @@
     {
         "id": 24,
         "name": "arbok",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 35,
         "weight": 650,
         "ownedBy": [
@@ -805,7 +866,9 @@
     {
         "id": 25,
         "name": "pikachu",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 4,
         "weight": 60,
         "ownedBy": [
@@ -846,7 +909,9 @@
     {
         "id": 26,
         "name": "raichu",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 8,
         "weight": 300,
         "ownedBy": [
@@ -867,7 +932,9 @@
     {
         "id": 27,
         "name": "sandshrew",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 6,
         "weight": 120,
         "ownedBy": [
@@ -884,7 +951,9 @@
     {
         "id": 28,
         "name": "sandslash",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 10,
         "weight": 295,
         "ownedBy": []
@@ -892,7 +961,9 @@
     {
         "id": 29,
         "name": "nidoran-f",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 4,
         "weight": 70,
         "ownedBy": [
@@ -929,7 +1000,9 @@
     {
         "id": 30,
         "name": "nidorina",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 8,
         "weight": 200,
         "ownedBy": [
@@ -958,7 +1031,10 @@
     {
         "id": 31,
         "name": "nidoqueen",
-        "type": ["poison", "ground"],
+        "type": [
+            "poison",
+            "ground"
+        ],
         "height": 13,
         "weight": 600,
         "ownedBy": [
@@ -975,7 +1051,9 @@
     {
         "id": 32,
         "name": "nidoran-m",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 5,
         "weight": 90,
         "ownedBy": [
@@ -996,7 +1074,9 @@
     {
         "id": 33,
         "name": "nidorino",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 9,
         "weight": 195,
         "ownedBy": [
@@ -1013,7 +1093,10 @@
     {
         "id": 34,
         "name": "nidoking",
-        "type": "poison",
+        "type": [
+            "poison",
+            "ground"
+        ],
         "height": 14,
         "weight": 620,
         "ownedBy": [
@@ -1062,7 +1145,9 @@
     {
         "id": 35,
         "name": "clefairy",
-        "type": "fairy",
+        "type": [
+            "fairy"
+        ],
         "height": 6,
         "weight": 75,
         "ownedBy": [
@@ -1107,7 +1192,9 @@
     {
         "id": 36,
         "name": "clefable",
-        "type": "fairy",
+        "type": [
+            "fairy"
+        ],
         "height": 13,
         "weight": 400,
         "ownedBy": [
@@ -1120,7 +1207,9 @@
     {
         "id": 37,
         "name": "vulpix",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 6,
         "weight": 99,
         "ownedBy": [
@@ -1141,7 +1230,9 @@
     {
         "id": 38,
         "name": "ninetales",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 11,
         "weight": 199,
         "ownedBy": [
@@ -1154,7 +1245,10 @@
     {
         "id": 39,
         "name": "jigglypuff",
-        "type": "normal",
+        "type": [
+            "normal",
+            "fairy"
+        ],
         "height": 5,
         "weight": 55,
         "ownedBy": [
@@ -1175,7 +1269,10 @@
     {
         "id": 40,
         "name": "wigglytuff",
-        "type": "normal",
+        "type": [
+            "normal",
+            "fairy"
+        ],
         "height": 10,
         "weight": 120,
         "ownedBy": [
@@ -1216,7 +1313,10 @@
     {
         "id": 41,
         "name": "zubat",
-        "type": "poison",
+        "type": [
+            "poison",
+            "flying"
+        ],
         "height": 8,
         "weight": 75,
         "ownedBy": [
@@ -1229,7 +1329,10 @@
     {
         "id": 42,
         "name": "golbat",
-        "type": "poison",
+        "type": [
+            "poison",
+            "flying"
+        ],
         "height": 16,
         "weight": 550,
         "ownedBy": [
@@ -1250,7 +1353,10 @@
     {
         "id": 43,
         "name": "oddish",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 5,
         "weight": 54,
         "ownedBy": [
@@ -1295,7 +1401,10 @@
     {
         "id": 44,
         "name": "gloom",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 8,
         "weight": 86,
         "ownedBy": [
@@ -1316,7 +1425,10 @@
     {
         "id": 45,
         "name": "vileplume",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 12,
         "weight": 186,
         "ownedBy": [
@@ -1345,7 +1457,10 @@
     {
         "id": 46,
         "name": "paras",
-        "type": "bug",
+        "type": [
+            "bug",
+            "grass"
+        ],
         "height": 3,
         "weight": 54,
         "ownedBy": [
@@ -1358,7 +1473,10 @@
     {
         "id": 47,
         "name": "parasect",
-        "type": "bug",
+        "type": [
+            "bug",
+            "grass"
+        ],
         "height": 10,
         "weight": 295,
         "ownedBy": [
@@ -1391,7 +1509,10 @@
     {
         "id": 48,
         "name": "venonat",
-        "type": "bug",
+        "type": [
+            "bug",
+            "poison"
+        ],
         "height": 10,
         "weight": 300,
         "ownedBy": [
@@ -1404,7 +1525,10 @@
     {
         "id": 49,
         "name": "venomoth",
-        "type": "bug",
+        "type": [
+            "bug",
+            "poison"
+        ],
         "height": 15,
         "weight": 125,
         "ownedBy": []
@@ -1412,7 +1536,9 @@
     {
         "id": 50,
         "name": "diglett",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 2,
         "weight": 8,
         "ownedBy": [
@@ -1453,7 +1579,9 @@
     {
         "id": 51,
         "name": "dugtrio",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 7,
         "weight": 333,
         "ownedBy": [
@@ -1474,7 +1602,9 @@
     {
         "id": 52,
         "name": "meowth",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 4,
         "weight": 42,
         "ownedBy": [
@@ -1495,7 +1625,9 @@
     {
         "id": 53,
         "name": "persian",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 10,
         "weight": 320,
         "ownedBy": [
@@ -1524,7 +1656,9 @@
     {
         "id": 54,
         "name": "psyduck",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 8,
         "weight": 196,
         "ownedBy": [
@@ -1553,7 +1687,9 @@
     {
         "id": 55,
         "name": "golduck",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 17,
         "weight": 766,
         "ownedBy": [
@@ -1582,7 +1718,9 @@
     {
         "id": 56,
         "name": "mankey",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 5,
         "weight": 280,
         "ownedBy": []
@@ -1590,7 +1728,9 @@
     {
         "id": 57,
         "name": "primeape",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 10,
         "weight": 320,
         "ownedBy": [
@@ -1619,7 +1759,9 @@
     {
         "id": 58,
         "name": "growlithe",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 7,
         "weight": 190,
         "ownedBy": [
@@ -1648,7 +1790,9 @@
     {
         "id": 59,
         "name": "arcanine",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 19,
         "weight": 1550,
         "ownedBy": [
@@ -1677,7 +1821,9 @@
     {
         "id": 60,
         "name": "poliwag",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 6,
         "weight": 124,
         "ownedBy": [
@@ -1714,7 +1860,9 @@
     {
         "id": 61,
         "name": "poliwhirl",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 10,
         "weight": 200,
         "ownedBy": [
@@ -1735,7 +1883,10 @@
     {
         "id": 62,
         "name": "poliwrath",
-        "type": ["water", "fighting"],
+        "type": [
+            "water",
+            "fighting"
+        ],
         "height": 13,
         "weight": 540,
         "ownedBy": [
@@ -1760,7 +1911,9 @@
     {
         "id": 63,
         "name": "abra",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 9,
         "weight": 195,
         "ownedBy": [
@@ -1773,7 +1926,9 @@
     {
         "id": 64,
         "name": "kadabra",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 13,
         "weight": 565,
         "ownedBy": [
@@ -1802,7 +1957,9 @@
     {
         "id": 65,
         "name": "alakazam",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 15,
         "weight": 480,
         "ownedBy": [
@@ -1815,7 +1972,9 @@
     {
         "id": 66,
         "name": "machop",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 8,
         "weight": 195,
         "ownedBy": [
@@ -1844,7 +2003,9 @@
     {
         "id": 67,
         "name": "machoke",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 15,
         "weight": 705,
         "ownedBy": [
@@ -1869,7 +2030,9 @@
     {
         "id": 68,
         "name": "machamp",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 16,
         "weight": 1300,
         "ownedBy": [
@@ -1914,7 +2077,10 @@
     {
         "id": 69,
         "name": "bellsprout",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 7,
         "weight": 40,
         "ownedBy": [
@@ -1927,7 +2093,10 @@
     {
         "id": 70,
         "name": "weepinbell",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 10,
         "weight": 64,
         "ownedBy": [
@@ -1960,7 +2129,10 @@
     {
         "id": 71,
         "name": "victreebel",
-        "type": "grass",
+        "type": [
+            "grass",
+            "poison"
+        ],
         "height": 17,
         "weight": 155,
         "ownedBy": [
@@ -1973,7 +2145,10 @@
     {
         "id": 72,
         "name": "tentacool",
-        "type": "water",
+        "type": [
+            "water",
+            "poison"
+        ],
         "height": 9,
         "weight": 455,
         "ownedBy": [
@@ -2014,7 +2189,10 @@
     {
         "id": 73,
         "name": "tentacruel",
-        "type": "water",
+        "type": [
+            "water",
+            "poison"
+        ],
         "height": 16,
         "weight": 550,
         "ownedBy": [
@@ -2039,7 +2217,10 @@
     {
         "id": 74,
         "name": "geodude",
-        "type": "rock",
+        "type": [
+            "rock",
+            "ground"
+        ],
         "height": 4,
         "weight": 200,
         "ownedBy": [
@@ -2056,7 +2237,10 @@
     {
         "id": 75,
         "name": "graveler",
-        "type": "rock",
+        "type": [
+            "rock",
+            "ground"
+        ],
         "height": 10,
         "weight": 1050,
         "ownedBy": [
@@ -2077,7 +2261,10 @@
     {
         "id": 76,
         "name": "golem",
-        "type": "rock",
+        "type": [
+            "rock",
+            "ground"
+        ],
         "height": 14,
         "weight": 3000,
         "ownedBy": [
@@ -2094,7 +2281,9 @@
     {
         "id": 77,
         "name": "ponyta",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 10,
         "weight": 300,
         "ownedBy": [
@@ -2111,7 +2300,9 @@
     {
         "id": 78,
         "name": "rapidash",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 17,
         "weight": 950,
         "ownedBy": [
@@ -2148,7 +2339,10 @@
     {
         "id": 79,
         "name": "slowpoke",
-        "type": "water",
+        "type": [
+            "water",
+            "psychic"
+        ],
         "height": 12,
         "weight": 360,
         "ownedBy": [
@@ -2173,7 +2367,10 @@
     {
         "id": 80,
         "name": "slowbro",
-        "type": "water",
+        "type": [
+            "water",
+            "psychic"
+        ],
         "height": 16,
         "weight": 785,
         "ownedBy": [
@@ -2190,7 +2387,10 @@
     {
         "id": 81,
         "name": "magnemite",
-        "type": ["electric", "steel"],
+        "type": [
+            "electric",
+            "steel"
+        ],
         "height": 3,
         "weight": 60,
         "ownedBy": [
@@ -2219,7 +2419,10 @@
     {
         "id": 82,
         "name": "magneton",
-        "type": "electric",
+        "type": [
+            "electric",
+            "steel"
+        ],
         "height": 10,
         "weight": 600,
         "ownedBy": []
@@ -2227,7 +2430,10 @@
     {
         "id": 83,
         "name": "farfetchd",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 8,
         "weight": 150,
         "ownedBy": [
@@ -2248,7 +2454,10 @@
     {
         "id": 84,
         "name": "doduo",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 14,
         "weight": 392,
         "ownedBy": [
@@ -2269,7 +2478,10 @@
     {
         "id": 85,
         "name": "dodrio",
-        "type": "normal",
+        "type": [
+            "normal",
+            "flying"
+        ],
         "height": 18,
         "weight": 852,
         "ownedBy": [
@@ -2306,7 +2518,9 @@
     {
         "id": 86,
         "name": "seel",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 11,
         "weight": 900,
         "ownedBy": [
@@ -2319,7 +2533,10 @@
     {
         "id": 87,
         "name": "dewgong",
-        "type": "water",
+        "type": [
+            "water",
+            "ice"
+        ],
         "height": 17,
         "weight": 1200,
         "ownedBy": [
@@ -2332,7 +2549,9 @@
     {
         "id": 88,
         "name": "grimer",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 9,
         "weight": 300,
         "ownedBy": []
@@ -2340,7 +2559,9 @@
     {
         "id": 89,
         "name": "muk",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 12,
         "weight": 300,
         "ownedBy": [
@@ -2361,7 +2582,9 @@
     {
         "id": 90,
         "name": "shellder",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 3,
         "weight": 40,
         "ownedBy": [
@@ -2374,7 +2597,10 @@
     {
         "id": 91,
         "name": "cloyster",
-        "type": "water",
+        "type": [
+            "water",
+            "ice"
+        ],
         "height": 15,
         "weight": 1325,
         "ownedBy": [
@@ -2415,7 +2641,10 @@
     {
         "id": 92,
         "name": "gastly",
-        "type": ["ghost", "poison"],
+        "type": [
+            "ghost",
+            "poison"
+        ],
         "height": 13,
         "weight": 1,
         "ownedBy": [
@@ -2432,7 +2661,10 @@
     {
         "id": 93,
         "name": "haunter",
-        "type": "ghost",
+        "type": [
+            "ghost",
+            "poison"
+        ],
         "height": 16,
         "weight": 1,
         "ownedBy": [
@@ -2445,7 +2677,10 @@
     {
         "id": 94,
         "name": "gengar",
-        "type": "ghost",
+        "type": [
+            "ghost",
+            "poison"
+        ],
         "height": 15,
         "weight": 405,
         "ownedBy": [
@@ -2470,7 +2705,10 @@
     {
         "id": 95,
         "name": "onix",
-        "type": "rock",
+        "type": [
+            "rock",
+            "ground"
+        ],
         "height": 88,
         "weight": 2100,
         "ownedBy": [
@@ -2507,7 +2745,9 @@
     {
         "id": 96,
         "name": "drowzee",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 10,
         "weight": 324,
         "ownedBy": [
@@ -2520,7 +2760,9 @@
     {
         "id": 97,
         "name": "hypno",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 16,
         "weight": 756,
         "ownedBy": [
@@ -2545,7 +2787,9 @@
     {
         "id": 98,
         "name": "krabby",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 4,
         "weight": 65,
         "ownedBy": [
@@ -2558,7 +2802,9 @@
     {
         "id": 99,
         "name": "kingler",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 13,
         "weight": 600,
         "ownedBy": []
@@ -2566,7 +2812,9 @@
     {
         "id": 100,
         "name": "voltorb",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 5,
         "weight": 104,
         "ownedBy": [
@@ -2579,7 +2827,9 @@
     {
         "id": 101,
         "name": "electrode",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 12,
         "weight": 666,
         "ownedBy": []
@@ -2587,7 +2837,10 @@
     {
         "id": 102,
         "name": "exeggcute",
-        "type": "grass",
+        "type": [
+            "grass",
+            "psychic"
+        ],
         "height": 4,
         "weight": 25,
         "ownedBy": []
@@ -2595,7 +2848,10 @@
     {
         "id": 103,
         "name": "exeggutor",
-        "type": "grass",
+        "type": [
+            "grass",
+            "psychic"
+        ],
         "height": 20,
         "weight": 1200,
         "ownedBy": []
@@ -2603,7 +2859,9 @@
     {
         "id": 104,
         "name": "cubone",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 4,
         "weight": 65,
         "ownedBy": [
@@ -2616,7 +2874,9 @@
     {
         "id": 105,
         "name": "marowak",
-        "type": "ground",
+        "type": [
+            "ground"
+        ],
         "height": 10,
         "weight": 450,
         "ownedBy": [
@@ -2629,7 +2889,9 @@
     {
         "id": 106,
         "name": "hitmonlee",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 15,
         "weight": 498,
         "ownedBy": [
@@ -2646,7 +2908,9 @@
     {
         "id": 107,
         "name": "hitmonchan",
-        "type": "fighting",
+        "type": [
+            "fighting"
+        ],
         "height": 14,
         "weight": 502,
         "ownedBy": [
@@ -2659,7 +2923,9 @@
     {
         "id": 108,
         "name": "lickitung",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 12,
         "weight": 655,
         "ownedBy": [
@@ -2672,7 +2938,9 @@
     {
         "id": 109,
         "name": "koffing",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 6,
         "weight": 10,
         "ownedBy": [
@@ -2697,7 +2965,9 @@
     {
         "id": 110,
         "name": "weezing",
-        "type": "poison",
+        "type": [
+            "poison"
+        ],
         "height": 12,
         "weight": 95,
         "ownedBy": []
@@ -2705,7 +2975,10 @@
     {
         "id": 111,
         "name": "rhyhorn",
-        "type": "ground",
+        "type": [
+            "ground",
+            "rock"
+        ],
         "height": 10,
         "weight": 1150,
         "ownedBy": [
@@ -2726,7 +2999,10 @@
     {
         "id": 112,
         "name": "rhydon",
-        "type": "ground",
+        "type": [
+            "ground",
+            "rock"
+        ],
         "height": 19,
         "weight": 1200,
         "ownedBy": []
@@ -2734,7 +3010,9 @@
     {
         "id": 113,
         "name": "chansey",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 11,
         "weight": 346,
         "ownedBy": [
@@ -2755,7 +3033,9 @@
     {
         "id": 114,
         "name": "tangela",
-        "type": "grass",
+        "type": [
+            "grass"
+        ],
         "height": 10,
         "weight": 350,
         "ownedBy": [
@@ -2784,7 +3064,9 @@
     {
         "id": 115,
         "name": "kangaskhan",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 22,
         "weight": 800,
         "ownedBy": [
@@ -2805,7 +3087,9 @@
     {
         "id": 116,
         "name": "horsea",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 4,
         "weight": 80,
         "ownedBy": [
@@ -2822,7 +3106,9 @@
     {
         "id": 117,
         "name": "seadra",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 12,
         "weight": 250,
         "ownedBy": []
@@ -2830,7 +3116,9 @@
     {
         "id": 118,
         "name": "goldeen",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 6,
         "weight": 150,
         "ownedBy": [
@@ -2843,7 +3131,9 @@
     {
         "id": 119,
         "name": "seaking",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 13,
         "weight": 390,
         "ownedBy": [
@@ -2872,7 +3162,9 @@
     {
         "id": 120,
         "name": "staryu",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 8,
         "weight": 345,
         "ownedBy": []
@@ -2880,7 +3172,10 @@
     {
         "id": 121,
         "name": "starmie",
-        "type": "water",
+        "type": [
+            "water",
+            "psychic"
+        ],
         "height": 11,
         "weight": 800,
         "ownedBy": []
@@ -2888,7 +3183,10 @@
     {
         "id": 122,
         "name": "mr-mime",
-        "type": "psychic",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
         "height": 13,
         "weight": 545,
         "ownedBy": [
@@ -2901,7 +3199,10 @@
     {
         "id": 123,
         "name": "scyther",
-        "type": "bug",
+        "type": [
+            "bug",
+            "flying"
+        ],
         "height": 15,
         "weight": 560,
         "ownedBy": [
@@ -2918,7 +3219,10 @@
     {
         "id": 124,
         "name": "jynx",
-        "type": ["ice", "psychic"],
+        "type": [
+            "ice",
+            "psychic"
+        ],
         "height": 14,
         "weight": 406,
         "ownedBy": []
@@ -2926,7 +3230,9 @@
     {
         "id": 125,
         "name": "electabuzz",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 11,
         "weight": 300,
         "ownedBy": []
@@ -2934,7 +3240,9 @@
     {
         "id": 126,
         "name": "magmar",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 13,
         "weight": 445,
         "ownedBy": [
@@ -2947,7 +3255,9 @@
     {
         "id": 127,
         "name": "pinsir",
-        "type": "bug",
+        "type": [
+            "bug"
+        ],
         "height": 15,
         "weight": 550,
         "ownedBy": [
@@ -2972,7 +3282,9 @@
     {
         "id": 128,
         "name": "tauros",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 14,
         "weight": 884,
         "ownedBy": [
@@ -2993,7 +3305,9 @@
     {
         "id": 129,
         "name": "magikarp",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 9,
         "weight": 100,
         "ownedBy": [
@@ -3022,7 +3336,10 @@
     {
         "id": 130,
         "name": "gyarados",
-        "type": "water",
+        "type": [
+            "water",
+            "flying"
+        ],
         "height": 65,
         "weight": 2350,
         "ownedBy": [
@@ -3043,7 +3360,10 @@
     {
         "id": 131,
         "name": "lapras",
-        "type": ["water", "ice"],
+        "type": [
+            "water",
+            "ice"
+        ],
         "height": 25,
         "weight": 2200,
         "ownedBy": [
@@ -3064,7 +3384,9 @@
     {
         "id": 132,
         "name": "ditto",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 3,
         "weight": 40,
         "ownedBy": []
@@ -3072,7 +3394,9 @@
     {
         "id": 133,
         "name": "eevee",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 3,
         "weight": 65,
         "ownedBy": [
@@ -3093,7 +3417,9 @@
     {
         "id": 134,
         "name": "vaporeon",
-        "type": "water",
+        "type": [
+            "water"
+        ],
         "height": 10,
         "weight": 290,
         "ownedBy": [
@@ -3106,7 +3432,9 @@
     {
         "id": 135,
         "name": "jolteon",
-        "type": "electric",
+        "type": [
+            "electric"
+        ],
         "height": 8,
         "weight": 245,
         "ownedBy": []
@@ -3114,7 +3442,9 @@
     {
         "id": 136,
         "name": "flareon",
-        "type": "fire",
+        "type": [
+            "fire"
+        ],
         "height": 9,
         "weight": 250,
         "ownedBy": []
@@ -3122,7 +3452,9 @@
     {
         "id": 137,
         "name": "porygon",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 8,
         "weight": 365,
         "ownedBy": [
@@ -3135,7 +3467,10 @@
     {
         "id": 138,
         "name": "omanyte",
-        "type": "rock",
+        "type": [
+            "rock",
+            "water"
+        ],
         "height": 4,
         "weight": 75,
         "ownedBy": []
@@ -3143,7 +3478,10 @@
     {
         "id": 139,
         "name": "omastar",
-        "type": "rock",
+        "type": [
+            "rock",
+            "water"
+        ],
         "height": 10,
         "weight": 350,
         "ownedBy": []
@@ -3151,7 +3489,10 @@
     {
         "id": 140,
         "name": "kabuto",
-        "type": "rock",
+        "type": [
+            "rock",
+            "water"
+        ],
         "height": 5,
         "weight": 115,
         "ownedBy": [
@@ -3164,7 +3505,10 @@
     {
         "id": 141,
         "name": "kabutops",
-        "type": "rock",
+        "type": [
+            "rock",
+            "water"
+        ],
         "height": 13,
         "weight": 405,
         "ownedBy": [
@@ -3185,7 +3529,10 @@
     {
         "id": 142,
         "name": "aerodactyl",
-        "type": "rock",
+        "type": [
+            "rock",
+            "flying"
+        ],
         "height": 18,
         "weight": 590,
         "ownedBy": []
@@ -3193,7 +3540,9 @@
     {
         "id": 143,
         "name": "snorlax",
-        "type": "normal",
+        "type": [
+            "normal"
+        ],
         "height": 21,
         "weight": 4600,
         "ownedBy": []
@@ -3201,7 +3550,10 @@
     {
         "id": 144,
         "name": "articuno",
-        "type": "ice",
+        "type": [
+            "ice",
+            "flying"
+        ],
         "height": 17,
         "weight": 554,
         "ownedBy": []
@@ -3209,7 +3561,10 @@
     {
         "id": 145,
         "name": "zapdos",
-        "type": "electric",
+        "type": [
+            "electric",
+            "flying"
+        ],
         "height": 16,
         "weight": 526,
         "ownedBy": []
@@ -3217,7 +3572,10 @@
     {
         "id": 146,
         "name": "moltres",
-        "type": "fire",
+        "type": [
+            "fire",
+            "flying"
+        ],
         "height": 20,
         "weight": 600,
         "ownedBy": []
@@ -3225,7 +3583,9 @@
     {
         "id": 147,
         "name": "dratini",
-        "type": "dragon",
+        "type": [
+            "dragon"
+        ],
         "height": 18,
         "weight": 33,
         "ownedBy": [
@@ -3242,7 +3602,9 @@
     {
         "id": 148,
         "name": "dragonair",
-        "type": "dragon",
+        "type": [
+            "dragon"
+        ],
         "height": 40,
         "weight": 165,
         "ownedBy": []
@@ -3250,7 +3612,10 @@
     {
         "id": 149,
         "name": "dragonite",
-        "type": ["dragon", "flying"],
+        "type": [
+            "dragon",
+            "flying"
+        ],
         "height": 22,
         "weight": 2100,
         "ownedBy": [
@@ -3263,7 +3628,9 @@
     {
         "id": 150,
         "name": "mewtwo",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 20,
         "weight": 1220,
         "ownedBy": []
@@ -3271,7 +3638,9 @@
     {
         "id": 151,
         "name": "mew",
-        "type": "psychic",
+        "type": [
+            "psychic"
+        ],
         "height": 4,
         "weight": 40,
         "ownedBy": []
