@@ -19,3 +19,13 @@ def execute_query(connection, query, data=None):
         cursor.execute(query)
     connection.commit()
     cursor.close()
+
+def execute_and_fetch_query(connection, query, data=None):
+    cursor = connection.cursor()
+    if data:
+        cursor.execute(query, data)
+    else:
+        cursor.execute(query)
+    result = cursor.fetchall()
+    cursor.close()
+    return [row[0] for row in result]
