@@ -13,9 +13,8 @@ def get_pokemons_by_trainer(name):
     """
 
     # Execute the query with the parameter
-    result = database.execute_and_fetch_query(connection,query, (name,))
+    result = database.execute_and_fetch_query(connection, query, (name,))
     
     return result
     
 
-print(get_pokemons_by_trainer("Loga"))
