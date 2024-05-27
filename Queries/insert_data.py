@@ -1,5 +1,6 @@
 import json
-import database
+from Queries import database
+
 import random
 
 

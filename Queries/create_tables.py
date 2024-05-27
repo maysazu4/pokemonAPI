@@ -1,4 +1,4 @@
-import database
+from Queries import database
 
 def create_pokemon_table(connection):
     database.execute_query(connection,'''

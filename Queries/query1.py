@@ -1,4 +1,4 @@
-import database
+from Queries import database
 
 
 def get_pokemons_of_type(type_name):
@@ -10,5 +10,3 @@ def get_pokemons_of_type(type_name):
     result = database.execute_and_fetch_query(connection, query, (type_name,))
     return result
 
-
-print(get_pokemons_of_type("grass"))
