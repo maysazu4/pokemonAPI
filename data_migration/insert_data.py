@@ -1,17 +1,14 @@
 import json
 from Queries import database
 
-import random
-
-
 '''
 Inserts a single type to the types table
 '''
 def insert_single_type(connection, type_name):
     database.execute_query(connection,
         "INSERT INTO Type (name) VALUES (%s) ON DUPLICATE KEY UPDATE name=name",
-        (type_name,)
-    )
+                           (type_name,)
+                           )
     return connection.cursor().lastrowid
 '''
 Inserts single pokemon to the pokemen table and its type to the pokemenType table 
@@ -19,12 +16,12 @@ Inserts single pokemon to the pokemen table and its type to the pokemenType tabl
 def insert_pokemon(connection, pokemon, type_name):
     database.execute_query(connection,
         "INSERT IGNORE INTO pokemon (id, name, height, weight) VALUES (%s, %s, %s, %s)",
-        (pokemon["id"], pokemon["name"], pokemon["height"], pokemon["weight"])
-    )
+                           (pokemon["id"], pokemon["name"], pokemon["height"], pokemon["weight"])
+                           )
     database.execute_query(connection,
         "INSERT IGNORE INTO pokemonType (pokemon_id, type_name) VALUES (%s, %s)",
-        (pokemon["id"], type_name)
-    )
+                           (pokemon["id"], type_name)
+                           )
 '''
 Insert data into the pokemon table
 '''
@@ -51,8 +48,8 @@ def insert_into_trainer(data, connection):
     for trainer in trainers:
         database.execute_query(connection,
             "INSERT IGNORE INTO trainer (name, town) VALUES (%s, %s)",
-            trainer
-        )
+                               trainer
+                               )
 '''
 Insert data into the ownership table
 '''
@@ -61,8 +58,8 @@ def insert_into_ownership(data, connection):
         for trainer in pokemon["ownedBy"]:
             database.execute_query(connection,
                 "INSERT IGNORE INTO ownership (trainer_name, pokemon_id) VALUES (%s, %s)",
-                (trainer["name"], pokemon["id"])
-            )
+                                   (trainer["name"], pokemon["id"])
+                                   )
 '''
 Inserts all the data in the json files to MySql database
 '''
