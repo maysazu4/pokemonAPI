@@ -1,4 +1,4 @@
-import database
+from Queries import database
 
 
 def get_trainers_by_pokemon(name):
@@ -17,6 +17,4 @@ def get_trainers_by_pokemon(name):
     
     return result
     
-
-print(get_trainers_by_pokemon("gengar"))
-
+ 
