@@ -1,4 +1,4 @@
-import database
+from Queries import database
 
 
 def get_pokemons_by_trainer(name):
