@@ -10,7 +10,7 @@ def get_pokemons_by_type(type: str):
     return query1.get_pokemons_of_type(type)
 
 
-@router.get("pokemons/{pokemon_name}/trainers")
+@router.get("/pokemon/{pokemon_name}/trainers")
 def get_trainers_by_pokemon(pokemon_name: str):
     print(pokemon_name)
     return query2.get_trainers_by_pokemon(pokemon_name)
