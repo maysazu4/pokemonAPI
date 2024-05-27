@@ -16,7 +16,6 @@ def insert_single_type(connection, type_name):
 Inserts single pokemon to the pokemen table and its type to the pokemenType table 
 '''
 def insert_pokemon(connection, pokemon, type_name):
-    print(type_name)
     database.execute_query(connection,
         "INSERT IGNORE INTO pokemon (id, name, height, weight) VALUES (%s, %s, %s, %s)",
         (pokemon["id"], pokemon["name"], pokemon["height"], pokemon["weight"])
@@ -59,21 +58,16 @@ Insert data into the ownership table
 def insert_into_ownership(data, connection):
     for pokemon in data:
         for trainer in pokemon["ownedBy"]:
-            if isinstance(pokemon["type"], list): 
-                type_name = random.choice(pokemon["type"])
-            else:
-                type_name = pokemon["type"]
-
             database.execute_query(connection,
-                "INSERT IGNORE INTO ownership (trainer_name, pokemon_id, type_name) VALUES (%s, %s, %s)",
-                (trainer["name"], pokemon["id"], type_name)
+                "INSERT IGNORE INTO ownership (trainer_name, pokemon_id) VALUES (%s, %s)",
+                (trainer["name"], pokemon["id"])
             )
 '''
 Inserts all the data in the json files to MySql database
 '''
 def insert_data():
     # Load JSON data
-    with open('DB/pokemons_data.json') as file:
+    with open('json_db/pokemons_data.json') as file:
         data = json.load(file)
 
     # Connect to MySQL database
@@ -85,3 +79,5 @@ def insert_data():
 
     # Commit changes and close connection
     database.close_connection(connection)
+
+insert_data()

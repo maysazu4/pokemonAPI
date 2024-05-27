@@ -1,15 +1,15 @@
 import database
 
 
-def get_trainers_by_pokemon(name):
+def get_pokemons_by_trainer(name):
     # Connect to MySQL database
     connection = database.connect_to_database()
 
     query = """
-    SELECT o.trainer_name
-    FROM Ownership o
-    JOIN Pokemon p ON p.id = o.pokemon_id
-    WHERE p.name = %s;
+    SELECT p.name
+    FROM Pokemon p
+    JOIN Ownership o ON p.id = o.pokemon_id
+    WHERE o.trainer_name = %s;
     """
 
     # Execute the query with the parameter
@@ -18,5 +18,4 @@ def get_trainers_by_pokemon(name):
     return result
     
 
-print(get_trainers_by_pokemon("gengar"))
-
+print(get_pokemons_by_trainer("Loga"))

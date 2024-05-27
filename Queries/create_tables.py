@@ -1,7 +1,5 @@
 import database
 
-
-
 def create_pokemon_table(connection):
     database.execute_query(connection,'''
     CREATE TABLE IF NOT EXISTS Pokemon (
@@ -44,21 +42,20 @@ def create_ownership_table(connection):
     CREATE TABLE IF NOT EXISTS Ownership (
         trainer_name VARCHAR(255),
         pokemon_id INT,
-        type_name VARCHAR(255),
-        PRIMARY KEY (trainer_name, type_name),
+        PRIMARY KEY (trainer_name, pokemon_id),
         FOREIGN KEY (trainer_name) REFERENCES Trainer(name),
-        FOREIGN KEY (pokemon_id) REFERENCES Pokemon(id),
-        FOREIGN KEY (type_name) REFERENCES Type(name)
-        
+        FOREIGN KEY (pokemon_id) REFERENCES Pokemon(id) 
     )
     ''')
 
 def create_tables():
     # Connect to the database
     connection = database.connect_to_database()
-    create_pokemon_table()
-    create_trainer_table()
-    create_type_table()
-    create_ownership_table()
-    create_pokemon_type_table()
+    create_pokemon_table(connection)
+    create_trainer_table(connection)
+    create_type_table(connection)
+    create_ownership_table(connection)
+    create_pokemon_type_table(connection)
     database.close_connection(connection)
+
+create_tables()

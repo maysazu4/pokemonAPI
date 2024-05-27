@@ -1,5 +1,5 @@
-from api_request import get_pokemon_types
-from file_utils import read_data_json, write_data_json
+from pokeApi_request import get_pokemon_types
+from utils.file_handler import read_data_json, write_data_json
 import requests
 
 
@@ -26,4 +26,4 @@ def fix_all_pokemons_type(file_path):
 
 
 if __name__ == "__main__":
-    fix_all_pokemons_type("../DB/pokemons_data.json")
+    fix_all_pokemons_type("../json_db/pokemons_data.json")
