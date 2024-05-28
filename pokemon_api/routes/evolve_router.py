@@ -11,7 +11,7 @@ router = APIRouter()
 
 
 
-@router.post("/trainers/{trainer_name}/pokemons/{pokemon_name}")
+@router.patch("/trainers/{trainer_name}/pokemons/{pokemon_name}")
 async def evolve_pokemon(trainer_name:str, pokemon_name:str):
     if not query_exist.trainer_has_pokemon(trainer_name, pokemon_name):
         return f"{trainer_name} does not have {pokemon_name} pokemon"
@@ -30,7 +30,7 @@ async def evolve_pokemon(trainer_name:str, pokemon_name:str):
     if not query_exist.pokemon_exists(evolved_pokemon_name):
         # add it
         pokemon_info = g.get_pokemon_info(pokemon_name)
-        p.query_insert_pokemon.insert_pokemon(pokemon_info)
+        p.insert_pokemon(pokemon_info)
     
     return {"message": f"Evolved {pokemon_name} to {evolved_pokemon_name} for trainer {trainer_name}"}
 

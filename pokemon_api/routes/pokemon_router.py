@@ -18,7 +18,8 @@ def get_pokemons(type: str = Query(None), trainer_name: str = Query(None)):
         raise HTTPException(status_code=400, detail="Specify at least one query parameter: type or trainer_name.")
 
 
-@router.delete("/pokemon")
+
+@router.patch("/pokemons/{pokemon_name}/trainers/{trainer_name}")
 def delete_pokemon_of_trainer(trainer_name: str, pokemon_name: str):
     try:
         # Assuming query_delete_pokemon.delete_pokemon_of_trainer returns a boolean or raises an exception
