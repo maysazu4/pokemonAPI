@@ -41,3 +41,5 @@ def add_pokemon(pokemon_name: str):
     pokemon_info = get_pokemon_info(pokemon_name)
     query_insert_pokemon.insert_pokemon(pokemon_info)
     return True
+
+# געכעיכי
