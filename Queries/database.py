@@ -18,7 +18,9 @@ def execute_query(connection, query, data=None):
     else:
         cursor.execute(query)
     connection.commit()
+    affected_rows = cursor.rowcount
     cursor.close()
+    return affected_rows
 
 def execute_and_fetch_query(connection, query, data=None):
     cursor = connection.cursor()
