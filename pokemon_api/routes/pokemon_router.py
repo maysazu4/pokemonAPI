@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Query, HTTPException, Request
-from Queries import query1, query2, query3, query_delete_pokemon, query_insert_pokemon
-from pokemon_api.utils_get_info_http.get_pokemon_info import http_request_data, get_pokemon_info
+from Queries import query1, query3, query_delete_pokemon
+from pokemon_api.utils.get_pokemon_info_utils import  get_pokemon_info
+from Queries import query_insert_pokemon
 
 router = APIRouter()
 
@@ -19,15 +20,26 @@ def get_pokemons(type: str = Query(None), trainer_name: str = Query(None)):
 
 @router.delete("/pokemon")
 def delete_pokemon_of_trainer(trainer_name: str, pokemon_name: str):
-    query_delete_pokemon.delete_pokemon_of_trainer(trainer_name, pokemon_name)
-    return True
+    try:
+        # Assuming query_delete_pokemon.delete_pokemon_of_trainer returns a boolean or raises an exception
+        affected_rows  = query_delete_pokemon.delete_pokemon_of_trainer(trainer_name, pokemon_name)
+        if affected_rows == 0:
+            raise HTTPException(status_code=404, detail="Pokemon or trainer not found")
+        return {"message": "Pokemon deleted successfully"}
+    except HTTPException as http_exc:
+        # Reraise HTTP exceptions to be handled by FastAPI
+        raise http_exc
+    except Exception as e:
+        # Log the exception details (e.g., using a logging library)
+        # For demonstration, we just print the error
+        print(f"Unexpected error occurred: {e}")
+        raise HTTPException(status_code=500, detail="An unexpected error occurred")
 
 
 @router.post("/pokemon")
 def add_pokemon(pokemon_name: str):
-    response = http_request_data(pokemon_name)
-    response.raise_for_status()
-    data = response.json()
-    pokemon_info = get_pokemon_info(data)
+    pokemon_info = get_pokemon_info(pokemon_name)
     query_insert_pokemon.insert_pokemon(pokemon_info)
     return True
+
+# געכעיכי

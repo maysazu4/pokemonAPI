@@ -16,5 +16,4 @@ def get_pokemons_by_trainer(name):
     result = database.execute_and_fetch_query(connection, query, (name,))
     
     return result
-    
 

@@ -11,7 +11,5 @@ def get_trainers_by_pokemon(pokemon_name: str):
 
 
 @router.post("/trainer")
-def add_pokemon_to_trainer(trainer_name: str = Query(...), pokemon_id: int = Query(...)):
-
-    print(pokemon_id)
-    return query_insert_pokemon_to_trainer.insert_into_ownership(pokemon_id, trainer_name)
+def add_pokemon_to_trainer(trainer_name: str = Query(...), pokemon_name: str = Query(...)):
+    return query_insert_pokemon_to_trainer.insert_into_ownership(pokemon_name, trainer_name)
