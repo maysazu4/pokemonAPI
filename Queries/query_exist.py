@@ -1,4 +1,3 @@
-# from Queries import database
 from Queries import database
 
 
@@ -12,7 +11,7 @@ def pokemon_exists(pokemon_name):
     """
     result = database.execute_and_fetch_query(connection, query, (pokemon_name,))
     return len(result) != 0
-    
+
 def trainer_has_pokemon(trainer_name, pokemon_name):
     connection = database.connect_to_database()
     query = """

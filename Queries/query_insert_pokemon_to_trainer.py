@@ -5,6 +5,7 @@ def insert_into_ownership(pokemon_name, trainer_name):
     connection = database.connect_to_database()
     try:
         pokemon_info = get_pokemon_info(pokemon_name)
+        print(pokemon_info)
         database.execute_query(connection,
                                "INSERT INTO ownership (trainer_name, pokemon_id) VALUES (%s, %s)",
                                (trainer_name, pokemon_info[0])

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query, HTTPException, Request
 from Queries import query1, query3, query_delete_pokemon
-from pokemon_api.utils.get_pokemon_info_utils import  get_pokemon_info
+from pokemon_api.utils.get_pokemon_info_utils import get_pokemon_info
 from Queries import query_insert_pokemon
 
 router = APIRouter()
@@ -18,12 +18,11 @@ def get_pokemons(type: str = Query(None), trainer_name: str = Query(None)):
         raise HTTPException(status_code=400, detail="Specify at least one query parameter: type or trainer_name.")
 
 
-
 @router.patch("/pokemons/{pokemon_name}/trainers/{trainer_name}")
 def delete_pokemon_of_trainer(trainer_name: str, pokemon_name: str):
     try:
         # Assuming query_delete_pokemon.delete_pokemon_of_trainer returns a boolean or raises an exception
-        affected_rows  = query_delete_pokemon.delete_pokemon_of_trainer(trainer_name, pokemon_name)
+        affected_rows = query_delete_pokemon.delete_pokemon_of_trainer(trainer_name, pokemon_name)
         if affected_rows == 0:
             raise HTTPException(status_code=404, detail="Pokemon or trainer not found")
         return {"message": "Pokemon deleted successfully"}
@@ -42,5 +41,3 @@ def add_pokemon(pokemon_name: str):
     pokemon_info = get_pokemon_info(pokemon_name)
     query_insert_pokemon.insert_pokemon(pokemon_info)
     return True
-
-# געכעיכי

@@ -29,7 +29,7 @@ def get_trainers_by_pokemon(pokemon_name: str):
 
 
 @router.post("/trainer")
-def add_pokemon_to_trainer(trainer_name: str = Query(...), pokemon_name: str = Query(...)):
+def add_pokemon_to_trainer(trainer_name: str, pokemon_name: str):
     """
     Add a Pokémon to a trainer's collection.
 
