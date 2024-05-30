@@ -1,6 +1,5 @@
 import pytest
 from fastapi.testclient import TestClient
-from pokemon_api.routes import pokemon_router
 from pokemon_api.server import server
 
 
