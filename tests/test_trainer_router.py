@@ -8,7 +8,7 @@ client=TestClient(server)
 
 def test_get_trainers_by_pokemon_success():
 
-    response = client.get("/trainer?pokemon_name=charmander")
+    response = client.get("/trainers?pokemon_name=charmander")
 
     # Check response status code
     assert response.status_code == 200
@@ -20,7 +20,7 @@ def test_get_trainers_by_pokemon_success():
 def test_get_trainers_by_pokemon_not_found():
 
 #     # Send request to the endpoint
-    response = client.get("/trainer?pokemon_name=NonExistentPokemon")
+    response = client.get("/trainers?pokemon_name=NonExistentPokemon")
 #
 #     # Check response
     assert response.status_code == 404

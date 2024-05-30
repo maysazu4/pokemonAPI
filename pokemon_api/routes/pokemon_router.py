@@ -6,7 +6,7 @@ from Queries import query_insert_pokemon
 router = APIRouter()
 
 
-@router.get("/pokemon")
+@router.get("/pokemons")
 def get_pokemons(type: str = Query(None), trainer_name: str = Query(None)):
     if type and trainer_name:
         raise HTTPException(status_code=400, detail="Specify either type or trainer_name, not both.")
@@ -39,7 +39,7 @@ def delete_pokemon_of_trainer(trainer_name: str, pokemon_name: str):
         query_delete_pokemon.delete_pokemon_of_trainer(trainer_name, pokemon_name)
         return {"message": "Pokemon deleted successfully"}
 
-@router.post("/pokemon")
+@router.post("/pokemons")
 def add_pokemon(pokemon_name: str):
     if query_exist.pokemon_exists(pokemon_name):
         raise HTTPException(status_code=409, detail=f"{pokemon_name} pokemon is already in the database.")
