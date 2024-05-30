@@ -11,20 +11,19 @@ router = APIRouter()
 
 @router.patch("/trainers/{trainer_name}/pokemons/{pokemon_name}")
 async def evolve_pokemon(trainer_name: str, pokemon_name: str):
+    if not query_exist.trainer_exists(trainer_name):
+        raise HTTPException(status_code=404, detail=f"{trainer_name} trainer not found.")
+    if not query_exist.pokemon_exists(pokemon_name):
+        raise HTTPException(status_code=404, detail=f"{pokemon_name} pokemon not found.")
     if not query_exist.trainer_has_pokemon(trainer_name, pokemon_name):
         raise HTTPException(status_code=404, detail=f"{trainer_name} does not have {pokemon_name} pokemon")
-
     evolved_pokemon_name = await get_evolved_pokemon(pokemon_name)
     if not evolved_pokemon_name:
         raise HTTPException(status_code=400, detail=f"{pokemon_name} does not evolve")
-
     if query_exist.trainer_has_pokemon(trainer_name, evolved_pokemon_name):
         raise HTTPException(status_code=409, detail=f"{trainer_name} already has {evolved_pokemon_name} pokemon")
-
     delete_pokemon_of_trainer(trainer_name, pokemon_name)
-
     insert_into_ownership(evolved_pokemon_name, trainer_name)
-
     if not query_exist.pokemon_exists(evolved_pokemon_name):
         pokemon_info = get_pokemon_info(pokemon_name)
         insert_pokemon(pokemon_info)
