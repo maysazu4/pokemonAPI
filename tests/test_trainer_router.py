@@ -2,12 +2,10 @@ import pytest
 from fastapi.testclient import TestClient
 from pokemon_api.server import server
 
+client = TestClient(server)
 
-
-client=TestClient(server)
 
 def test_get_trainers_by_pokemon_success():
-
     response = client.get("/trainers?pokemon_name=charmander")
 
     # Check response status code
@@ -18,10 +16,7 @@ def test_get_trainers_by_pokemon_success():
 
 
 def test_get_trainers_by_pokemon_not_found():
-
-#     # Send request to the endpoint
-    response = client.get("/trainers?pokemon_name=NonExistentPokemon")
-#
-#     # Check response
+    response = client.get("/trainers?pokemon_name=MyPokemon")
     assert response.status_code == 404
-    assert response.json() == {"detail": "No trainers found for the given Pokémon."}
+    assert response.json() == {"detail": "MyPokemon pokemon not found."}
+
