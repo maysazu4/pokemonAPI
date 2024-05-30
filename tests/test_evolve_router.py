@@ -1,7 +1,4 @@
-from unittest.mock import patch
-
 from fastapi.testclient import TestClient
-
 from Queries import query3
 from pokemon_api.server import server
 
