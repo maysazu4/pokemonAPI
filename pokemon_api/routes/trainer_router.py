@@ -8,7 +8,7 @@ from Queries.query_insert_pokemon_to_trainer import insert_into_ownership
 router = APIRouter()
 
 
-@router.get("/trainer")
+@router.get("/trainers")
 def get_trainers_by_pokemon(pokemon_name: str):
     """
     Get a list of trainers who own a specific Pokémon.
@@ -28,7 +28,7 @@ def get_trainers_by_pokemon(pokemon_name: str):
     return trainers
 
 
-@router.post("/trainer")
+@router.post("/trainers")
 def add_pokemon_to_trainer(trainer_name: str, pokemon_name: str):
     """
     Add a Pokémon to a trainer's collection.
