@@ -11,8 +11,8 @@ This project involves the migration of Pokémon data from a JSON file to a relat
 
 ### Running the Server:
 To start the Pokémon API server using Uvicorn with auto-reloading enabled, run the following command in your terminal:
-
-
+```bash
+uvicorn pokemon_api.server:server --reload
 
 ## API Endpoints:
 
