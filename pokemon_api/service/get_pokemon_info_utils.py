@@ -1,10 +1,14 @@
+import json
+import os
+
 import requests
 
-base_url = "https://pokeapi.co/api/v2/pokemon/"
-
-
 def http_request_data(pokemon_name):
-    return requests.get(f"{base_url}{pokemon_name.lower()}")
+
+    with open('pokemon_api/service/constants.json') as f:
+            constants = json.load(f)
+
+    return requests.get(f"{constants["pokapi_url"]}/pokemon/{pokemon_name.lower()}")
 
 
 def get_pokemon_info(pokemon_name):

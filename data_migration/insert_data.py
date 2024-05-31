@@ -65,7 +65,7 @@ Inserts all the data in the json files to MySql database
 '''
 def insert_data():
     # Load JSON data
-    with open('json_db/pokemons_data.json') as file:
+    with open('POKEMONS/pokemons_data.json') as file:
         data = json.load(file)
 
     # Connect to MySQL database

@@ -9,6 +9,7 @@ def test_evolve_pokemon_does_not_evolve():
     response = client.patch("/trainers/Misty/pokemons/pinsir")
     # Check response status code
     assert response.status_code == 400
+
     assert response.json() == {"detail": "pinsir does not evolve"}
 
 

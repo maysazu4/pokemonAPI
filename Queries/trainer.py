@@ -1,11 +1,11 @@
-from pokemon_api.utils.get_pokemon_info_utils import  get_pokemon_info
+from pokemon_api.service.get_pokemon_info_utils import  get_pokemon_info
 from Queries import database
 
 def insert_into_ownership(pokemon_name, trainer_name):
     connection = database.connect_to_database()
     try:
         pokemon_info = get_pokemon_info(pokemon_name)
-        print(pokemon_info)
+
         database.execute_query(connection,
                                "INSERT INTO ownership (trainer_name, pokemon_id) VALUES (%s, %s)",
                                (trainer_name, pokemon_info[0])

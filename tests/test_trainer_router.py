@@ -1,4 +1,3 @@
-import pytest
 from fastapi.testclient import TestClient
 from pokemon_api.server import server
 

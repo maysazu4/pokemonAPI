@@ -1,9 +1,8 @@
-from fastapi import  HTTPException
+import json
+
+from fastapi import HTTPException
 import httpx
 
-
-
-POKEAPI_URL = "https://pokeapi.co/api/v2"
 
 def find_evolution(chain, target_name):
     if chain["species"]["name"] == target_name:
@@ -17,13 +16,16 @@ def find_evolution(chain, target_name):
             return result
         return None
 
+
 async def get_evolved_pokemon(pokemon_name: str):
     async with httpx.AsyncClient() as client:
-        # Fetch the Pokémon data
-        pokemon_response = await client.get(f"{POKEAPI_URL}/pokemon/{pokemon_name.lower()}")
+        with open('pokemon_api/service/constants.json') as f:
+            constants = json.load(f)
+        print(constants)
+        pokemon_response = await client.get(f"{constants['pokapi_url']}/pokemon/{pokemon_name.lower()}")
         if pokemon_response.status_code != 200:
             raise HTTPException(status_code=404, detail="Pokémon not found")
-        
+
         pokemon_data = pokemon_response.json()
         species_url = pokemon_data["species"]["url"]
 
