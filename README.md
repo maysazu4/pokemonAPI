@@ -13,7 +13,7 @@ This project involves the migration of Pokémon data from a JSON file to a relat
 To start the Pokémon API server using Uvicorn with auto-reloading enabled, run the following command in your terminal:
 ```bash
 uvicorn pokemon_api.server:server --reload
-
+```
 ## API Endpoints:
 
 - `POST /pokemons?pokemon_name=<pokemon_name>`: Add new Pokémon species.
