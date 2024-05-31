@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from Queries import trainer, pokemon
-from pokemon_api.utils.evolve_utils import get_evolved_pokemon
-from pokemon_api.utils.get_pokemon_info_utils import get_pokemon_info
+from pokemon_api.service.evolve_utils import get_evolved_pokemon
+from pokemon_api.service.get_pokemon_info_utils import get_pokemon_info
 
 router = APIRouter()
 
@@ -25,6 +25,7 @@ router = APIRouter()
 
 @router.patch("/trainers/{trainer_name}/pokemons/{pokemon_name}")
 async def evolve_pokemon(trainer_name: str, pokemon_name: str):
+
     if not trainer.trainer_exists(trainer_name):
         raise HTTPException(status_code=404, detail=f"{trainer_name} trainer not found.")
     if not pokemon.pokemon_exists(pokemon_name):

@@ -61,7 +61,9 @@ def pokemon_exists(pokemon_name):
     FROM Pokemon 
     WHERE name=%s;
     """
+
     result = database.execute_and_fetch_query(connection, query, (pokemon_name,))
+
     return len(result) != 0
 
 def insert_pokemon(pokemon_info):
