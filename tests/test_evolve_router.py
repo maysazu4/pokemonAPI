@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from Queries import query3
+from Queries import pokemon
 from pokemon_api.server import server
 
 client = TestClient(server)
@@ -27,10 +27,10 @@ def test_evolve_pokemon_success():
     response = client.patch("/trainers/Whitney/pokemons/oddish")
     assert response.status_code == 404
     assert response.json() == {"detail": "Whitney does not have oddish pokemon"}
-    assert 'gloom' in query3.get_pokemons_by_trainer('Whitney')
+    assert 'gloom' in pokemon.get_pokemons_by_trainer('Whitney')
 
 def test_evolve_pokemon_already_have_evolved_pokemon():
-    assert 'pikachu' and 'raichu' in query3.get_pokemons_by_trainer('Whitney')
+    assert 'pikachu' and 'raichu' in pokemon.get_pokemons_by_trainer('Whitney')
     response = client.patch("/trainers/Whitney/pokemons/pikachu")
     assert response.status_code == 409
     assert response.json() == {"detail": "Whitney already has raichu pokemon"}
