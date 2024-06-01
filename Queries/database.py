@@ -5,7 +5,7 @@ import mysql.connector
 
 
 def connect_to_database():
-    with open('Queries/config.json', 'r') as f:
+    with open('config.json', 'r') as f:
         db_config = json.load(f)
 
     db_config = db_config['database']
